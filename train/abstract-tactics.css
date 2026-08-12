@@ -1,8 +1,9 @@
 .reload-btn {
+	display: block;
+	margin: -50px auto 0;
 	font-size: 5rem;
 	background: transparent;
 	color: #fff;
-	margin-top: -50px;
 	cursor: pointer;
 }
 
