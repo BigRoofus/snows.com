@@ -249,6 +249,10 @@ footer {
 	justify-content: center;
 }
 
+.footer-inner {
+	text-align: center;
+}
+
 /* CUSTOM ELEMENTS */
 
 /* SITE NAV */

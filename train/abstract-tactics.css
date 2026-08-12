@@ -1,9 +1,9 @@
 #tactic {
 	max-width: 560px;
 	margin: 0 auto;
-	text-align: left;
+	text-align: center;
 	animation: skyTextCycle 90s linear infinite;
-	animation-delay: -60s;
+	animation-delay: -45s;
 }
 
 @keyframes skyTextCycle {
