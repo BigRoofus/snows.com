@@ -13,12 +13,12 @@ if (canvas) {
 	let targetWind = 15
 	let currentWind = 5
 	const minWind = -20
-	const maxWind = 35
+	const maxWind = 30
 
-	const minSize = 1
-	const maxSize = 154.9
-	const minFall = 0.4
-	const maxFall = 20.4
+	const minSize = 4
+	const maxSize = 140
+	const minFall = 2
+	const maxFall = 18
 
 	let lastChangeTime = 0
 	let particles = []
