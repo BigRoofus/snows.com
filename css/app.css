@@ -149,6 +149,7 @@ body {
 	);
 	background-size: 100% 2000%;
 	animation: skyCycle 90s linear infinite;
+	animation-delay: -15s;
 	overflow: hidden;
 	margin: 0;
 	display: flex;
