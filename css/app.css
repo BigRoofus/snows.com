@@ -29,6 +29,15 @@ body {
 	font-family: 'Inter', sans-serif;
 }
 
+.container {
+	width: 100%;
+	max-width: 700px;
+	margin: 0 auto;
+	padding: 0 24px;
+	box-sizing: border-box;
+	line-height: 1.6;
+}
+
 h1 {
 	font-size: 2rem;
 	text-align: center;
