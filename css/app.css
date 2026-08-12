@@ -127,7 +127,9 @@ footer {
 	right: 0;
 	min-width: 200px;
 	background: rgba(252, 189, 219, 0.95);
-	padding: 0.5rem 0;
+	border: 1px solid #1a1a1a;
+	padding: 0.5rem 0.6rem;
+	gap: 0.15rem;
 }
 
 .nav-dropdown.open {
@@ -136,7 +138,7 @@ footer {
 
 .nav-dropdown a {
 	display: block;
-	padding: 0.55rem 1.1rem;
+	padding: 0.15rem 0.2rem;
 	font-size: 13px;
 	font-weight: 500;
 	letter-spacing: 0.02em;
