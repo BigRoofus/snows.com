@@ -4,11 +4,11 @@ if (canvas) {
 	const ctx = canvas.getContext('2d')
 	const snowColor = '#ff90ae'
 
-	let numParticles = 1650
+	let numParticles = 254
 	const minParticles = 1
-	const maxParticles = 231
+	const maxParticles = 50
 	const changeAmount = 10
-	let changeInterval = 4000
+	let changeInterval = 5000
 
 	let targetWind = 15
 	let currentWind = 5
