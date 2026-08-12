@@ -2,7 +2,7 @@ const canvas = document.getElementById('snowCanvas')
 
 if (canvas) {
 	const ctx = canvas.getContext('2d')
-	const flakeCount = 120
+	const flakeCount = 40
 	let flakes = []
 	let frame
 
@@ -12,13 +12,15 @@ if (canvas) {
 	}
 
 	function makeFlake() {
+		// depth is skewed toward small/distant flakes, with a few large/close ones
+		const depth = Math.pow(Math.random(), 2.2)
 		return {
 			x: Math.random() * canvas.width,
 			y: Math.random() * canvas.height,
-			radius: Math.random() * 2.5 + 0.5,
-			speed: Math.random() * 1 + 0.3,
+			radius: depth * 18 + 0.4,
+			speed: depth * 1.8 + 0.2,
 			drift: Math.random() * 0.6 - 0.3,
-			opacity: Math.random() * 0.5 + 0.4,
+			opacity: depth * 0.55 + 0.35,
 		}
 	}
 
