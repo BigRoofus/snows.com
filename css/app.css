@@ -152,6 +152,8 @@ footer {
 .centered-logo {
 	width: 33vw;
 	max-width: 420px;
+	position: relative;
+	z-index: 1;
 }
 
 .leftalign {
@@ -162,6 +164,22 @@ footer {
 	font-family: monospace;
 	font-size: 0.45rem;
 	white-space: pre;
+}
+
+/* SNOW CANVAS */
+#snowCanvas {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	z-index: 0;
+}
+
+/* TRAIN INDEX */
+.train-index a {
+	display: block;
 }
 
 /* ANIMATIONS */

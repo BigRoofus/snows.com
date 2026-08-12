@@ -1,0 +1,11 @@
+.reload-btn {
+	font-size: 5rem;
+	background: transparent;
+	color: #fff;
+	margin-top: -50px;
+	cursor: pointer;
+}
+
+.reload-btn:hover {
+	background: transparent;
+}

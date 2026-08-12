@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1a1a1a" />
+    <link rel="canonical" href="https://itsnowsinaustralia.com/train/rhythmic-transcription.html" />
+
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Open+Sans:wght@400;600;700&display=swap" />
+
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="stylesheet" href="/train/rhythmic-transcription.css" />
+
+    <title>Rhythmic Transcription | It Snows In Australia</title>
+  </head>
+  <body>
+    <div class="filter"></div>
+
+    <div class="corner-div">
+      <a href="/train/index.html">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M3 11.5L12 4l9 7.5M5.5 10v9a1 1 0 0 0 1 1H9v-6h6v6h2.5a1 1 0 0 0 1-1v-9"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <div id="win-view" hidden>
+      <div class="fireworks" id="fireworks">
+        <div class="firework firework-1"></div>
+        <div class="firework firework-2"></div>
+        <div class="firework firework-3"></div>
+        <div class="firework firework-4"></div>
+        <div class="firework firework-5"></div>
+        <div class="firework firework-6"></div>
+        <div class="firework firework-7"></div>
+        <div class="firework firework-8"></div>
+        <div class="firework firework-9"></div>
+        <div class="firework firework-10"></div>
+        <div class="firework firework-11"></div>
+        <div class="firework firework-12"></div>
+        <div class="firework firework-13"></div>
+        <div class="firework firework-14"></div>
+        <div class="firework firework-15"></div>
+        <div class="firework firework-16"></div>
+        <div class="firework firework-17"></div>
+        <div class="firework firework-18"></div>
+        <div class="firework firework-19"></div>
+        <div class="firework firework-20"></div>
+      </div>
+      <div style="height:20vh;">&nbsp;</div>
+      <div class="message">
+        <p>&#128076;</p>
+        <p>Correct!</p>
+        <p id="win-points"></p>
+        <p id="win-guess"></p>
+      </div>
+    </div>
+
+    <div id="lose-view" hidden>
+      <div class="slime"></div>
+      <div style="height:10vh;">&nbsp;</div>
+      <div class="message">
+        <p>&#128128;</p>
+        <div>No, try again!</div>
+        <p>the correct sequence was:</p>
+        <p id="lose-correct"></p>
+        <p>your guess:</p>
+        <p id="lose-guess"></p>
+        <p id="lose-points"></p>
+      </div>
+    </div>
+
+    <div id="play-view">
+      <div style="height:20vh;">&nbsp;</div>
+
+      <h1>RhytGeor! <button id="play-btn">&#9654;</button></h1>
+      <p>(1 bar of 4/4)</p>
+
+      <div id="guess">?</div>
+
+      <div id="buttons" style="margin:10px;">
+        <button data-symbol="𝅗𝅥">𝅗𝅥</button>
+        <button data-symbol="𝅘𝅥">𝅘𝅥</button>
+        <button data-symbol="𝅘𝅥𝅮">𝅘𝅥𝅮</button>
+        <button id="backspace-btn">&#128592;</button>
+      </div>
+
+      <button id="submit-btn">Submit Guess &#10003;</button>
+
+      <div class="score">
+        <p>score:</p>
+        <p id="score-display"></p>
+      </div>
+    </div>
+
+    <footer>
+      <div style="text-align: center;">
+        <span>&copy;<span class="footer-year"></span> Modest Records Nashville</span>
+      </div>
+    </footer>
+
+    <script src="/js/footer.js"></script>
+    <script type="module" src="/train/rhythmic-transcription.js"></script>
+  </body>
+</html>
