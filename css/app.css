@@ -192,6 +192,7 @@ footer {
 	line-height: 1.5;
 	font-weight: 400;
 	color: rgba(252, 189, 219, 0.75);
+	text-decoration: none;
 }
 
 .score {
