@@ -93,18 +93,59 @@ footer {
 }
 
 /* CUSTOM ELEMENTS */
-.corner-div {
+
+/* SITE NAV */
+.nav-menu {
 	position: fixed;
 	top: 10px;
 	right: 10px;
 	z-index: 999;
 }
 
-.corner-div a {
-	text-decoration: none;
-	color: rgba(255, 255, 255);
-	font-size: 1.2rem;
-	font-weight: bold;
+.nav-toggle {
+	background: none;
+	border: 0;
+	padding: 0.25rem;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+}
+
+.nav-toggle:hover,
+.nav-toggle:active {
+	background: none;
+	animation: none;
+}
+
+.nav-dropdown {
+	display: none;
+	flex-direction: column;
+	position: absolute;
+	top: 2.2rem;
+	right: 0;
+	min-width: 200px;
+	background: rgba(26, 26, 26, 0.95);
+	border-radius: 0.5rem;
+	padding: 0.5rem 0;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.nav-dropdown.open {
+	display: flex;
+}
+
+.nav-dropdown a {
+	display: block;
+	padding: 0.5rem 1rem;
+	font-size: 0.85rem;
+	font-weight: 600;
+	color: var(--pink);
+}
+
+.nav-dropdown a:hover {
+	background: rgba(255, 255, 255, 0.1);
 }
 
 .video {

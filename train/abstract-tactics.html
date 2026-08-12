@@ -23,18 +23,20 @@
   <body>
     <div class="filter"></div>
 
-    <div class="corner-div">
-      <a href="/train/index.html">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M3 11.5L12 4l9 7.5M5.5 10v9a1 1 0 0 0 1 1H9v-6h6v6h2.5a1 1 0 0 0 1-1v-9"
-            stroke="currentColor"
-            stroke-width="1.8"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
+    <div class="nav-menu">
+      <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
         </svg>
-      </a>
+      </button>
+      <nav class="nav-dropdown">
+        <a href="/index.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/train/index.html">Train</a>
+        <a href="/train/abstract-tactics.html">Abstract Tactics</a>
+        <a href="/train/rhythmic-transcription.html">Rhythmic Transcription</a>
+        <a href="/train/theory-tabs.html">Theory Tablature</a>
+      </nav>
     </div>
 
     <div class="full-center">
@@ -49,6 +51,7 @@
     </footer>
 
     <script src="/js/footer.js"></script>
+    <script src="/js/nav.js"></script>
     <script src="/train/abstract-tactics.js"></script>
   </body>
 </html>
