@@ -4,9 +4,9 @@ if (canvas) {
 	const ctx = canvas.getContext('2d')
 	const snowColor = '#ff90ae'
 
-	let numParticles = 15000
+	let numParticles = 5000
 	const minParticles = 3
-	const maxParticles = 1600
+	const maxParticles = 700
 	const changeAmount = 10
 	let changeInterval = 4000
 
@@ -25,7 +25,7 @@ if (canvas) {
 
 		reset() {
 			const factor = Math.random()
-			this.size = factor * 795 + 5
+			this.size = factor * 42 + 1
 			this.speed = factor * 4 + 0.001
 
 			this.x = Math.random() * canvas.width
