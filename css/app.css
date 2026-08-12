@@ -187,9 +187,11 @@ footer {
 }
 
 .note {
-	font-size: 50%;
-	padding-bottom: 40px;
-	max-width: 35vh;
+	display: block;
+	font-size: 0.68rem;
+	line-height: 1.5;
+	font-weight: 400;
+	color: rgba(252, 189, 219, 0.75);
 }
 
 .score {
@@ -240,8 +242,62 @@ footer {
 }
 
 /* TRAIN INDEX */
-.train-index a {
-	display: block;
+.train-index {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 1.1rem;
+}
+
+.train-heading {
+	margin-bottom: 0.4rem;
+	letter-spacing: 0.04em;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	color: var(--text-color);
+}
+
+.train-card {
+	display: flex;
+	align-items: flex-start;
+	gap: 0.9rem;
+	text-align: left;
+	padding: 1rem 1.2rem;
+	border-radius: 14px;
+	background: rgba(255, 255, 255, 0.06);
+	border: 1px solid rgba(252, 189, 219, 0.25);
+	backdrop-filter: blur(6px);
+	-webkit-backdrop-filter: blur(6px);
+	transition: transform 220ms ease, background 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+}
+
+.train-card:hover,
+.train-card:focus-visible {
+	transform: translateY(-3px);
+	background: rgba(255, 255, 255, 0.12);
+	border-color: rgba(252, 189, 219, 0.6);
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+}
+
+.train-card-icon {
+	flex: none;
+	font-size: 1.4rem;
+	line-height: 1;
+	margin-top: 0.15rem;
+}
+
+.train-card-body {
+	display: flex;
+	flex-direction: column;
+	gap: 0.3rem;
+}
+
+.train-card-title {
+	font-size: 1.05rem;
+	font-weight: 700;
+	color: var(--text-color);
+	text-decoration: underline;
+	text-underline-offset: 3px;
 }
 
 /* ANIMATIONS */
