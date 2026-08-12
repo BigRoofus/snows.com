@@ -4,9 +4,9 @@ if (canvas) {
 	const ctx = canvas.getContext('2d')
 	const snowColor = '#ff90ae'
 
-	let numParticles = 254
+	let numParticles = 2000
 	const minParticles = 1
-	const maxParticles = 50
+	const maxParticles = 150
 	const changeAmount = 10
 	let changeInterval = 5000
 
@@ -14,6 +14,11 @@ if (canvas) {
 	let currentWind = 5
 	const minWind = -20
 	const maxWind = 35
+
+	const minSize = 1
+	const maxSize = 154.9
+	const minFall = 0.4
+	const maxFall = 20.4
 
 	let lastChangeTime = 0
 	let particles = []
@@ -24,9 +29,10 @@ if (canvas) {
 		}
 
 		reset() {
-			const factor = Math.pow(Math.random(), 2.2)
-			this.size = factor * 171 + 1
-			this.speed = factor * 4 + 0.001
+			const sizeFactor = Math.pow(Math.random(), 50)
+			const speedFactor = Math.pow(Math.random(), 2.2)
+			this.size = sizeFactor * (maxSize - minSize) + minSize
+			this.speed = speedFactor * (maxFall - minFall) + minFall
 
 			this.x = Math.random() * canvas.width
 			this.y = -Math.random() * canvas.height
