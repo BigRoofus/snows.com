@@ -1,3 +1,108 @@
+/* FONTS */
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../assets/fonts/TTFirs-ExtraLight.woff2') format('woff2');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../assets/fonts/TTFirs-ExtraLightItalic.woff2') format('woff2');
+	font-weight: 200;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../assets/fonts/TTFirs-Light.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../assets/fonts/TTFirs-LightItalic.woff2') format('woff2');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../assets/fonts/TTFirs-Italic.woff2') format('woff2');
+	font-weight: 400;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../assets/fonts/TTFirs-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../assets/fonts/TTFirs-MediumItalic.woff2') format('woff2');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../assets/fonts/TTFirs-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../assets/fonts/TTFirs-BoldItalic.woff2') format('woff2');
+	font-weight: 700;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../assets/fonts/TTFirs-ExtraBold.woff2') format('woff2');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../assets/fonts/TTFirs-ExtraBoldItalic.woff2') format('woff2');
+	font-weight: 800;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../assets/fonts/TTFirs-Black.woff2') format('woff2');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'TT Firs';
+	src: url('../assets/fonts/TTFirs-BlackItalic.woff2') format('woff2');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
 /* BASIC ELEMENTS */
 :root {
 	--pink: #fcbddb;
@@ -12,7 +117,7 @@
 }
 
 html {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'TT Firs', sans-serif;
 	font-size: clamp(12px, calc(1.3vw + 1.3vh), 100px);
 	color: var(--text-color);
 }
@@ -26,7 +131,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	min-height: 100vh;
-	font-family: 'Inter', sans-serif;
+	font-family: 'TT Firs', sans-serif;
 }
 
 .container {
