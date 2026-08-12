@@ -80,6 +80,8 @@ if (!savedArray) {
 const tacticEl = document.getElementById('tactic')
 tacticEl.textContent = shuffledArray[currentIndex]
 
+applyComplementaryTextColor(tacticEl)
+
 document.getElementById('next-tactic').addEventListener('click', () => {
 	currentIndex = (currentIndex + 1) % shuffledArray.length
 	localStorage.setItem('currentIndex', String(currentIndex))
