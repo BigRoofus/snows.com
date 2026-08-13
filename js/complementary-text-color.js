@@ -91,3 +91,28 @@ function applyComplementaryTextColor(target, { saturation = 1, lightness = 0.65 
 	}
 	requestAnimationFrame(update)
 }
+
+// Continuously sets `target` elements' background color to the complementary
+// hue of the animated sky background (the same hue applyComplementaryTextColor
+// gives the text), at a fixed saturation/lightness and alpha.
+function applyComplementaryBackgroundColor(target, { saturation = 1, lightness = 0.65, alpha = 0.18 } = {}) {
+	const els =
+		typeof target === 'string'
+			? document.querySelectorAll(target)
+			: target instanceof NodeList || Array.isArray(target)
+				? target
+				: [target]
+	if (!els.length) return
+
+	function update() {
+		const [r, g, b] = currentSkyBackgroundColor()
+		const bgHue = rgbToHue(r, g, b)
+		const complementHue = (bgHue + 180) % 360
+		const [tr, tg, tb] = hslToRgb(complementHue, saturation, lightness)
+		els.forEach((el) => {
+			el.style.backgroundColor = `rgba(${tr}, ${tg}, ${tb}, ${alpha})`
+		})
+		requestAnimationFrame(update)
+	}
+	requestAnimationFrame(update)
+}

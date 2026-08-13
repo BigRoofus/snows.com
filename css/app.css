@@ -178,6 +178,10 @@ body {
 	line-height: 1.6;
 }
 
+#about-text {
+	font-size: 66%;
+}
+
 .profile-photo {
 	display: block;
 	width: 160px;
