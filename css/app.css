@@ -150,7 +150,8 @@ body {
 	background-size: 100% 2000%;
 	animation: skyCycle 90s linear infinite;
 	animation-delay: -15s;
-	overflow: hidden;
+	overflow-x: hidden;
+	overflow-y: auto;
 	margin: 0;
 	display: flex;
 	justify-content: center;
@@ -406,6 +407,11 @@ footer {
 	z-index: 0;
 }
 
+/* ABOUT PANELS */
+.about-panels {
+	margin-top: 2rem;
+}
+
 /* TRAIN INDEX */
 .train-index {
 	display: flex;
@@ -433,6 +439,7 @@ footer {
 	border: 1px solid rgba(252, 189, 219, 0.25);
 	backdrop-filter: blur(6px);
 	-webkit-backdrop-filter: blur(6px);
+	text-decoration: none;
 	transition: transform 220ms ease, background 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
 }
 
@@ -461,8 +468,6 @@ footer {
 	font-size: 1.05rem;
 	font-weight: 700;
 	color: var(--text-color);
-	text-decoration: underline;
-	text-underline-offset: 3px;
 }
 
 /* ANIMATIONS */
