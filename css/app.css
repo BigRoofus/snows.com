@@ -412,6 +412,11 @@ footer {
 	margin-top: 2rem;
 }
 
+.about-panels .train-card-title,
+.about-panels .note {
+	color: #fff;
+}
+
 /* TRAIN INDEX */
 .train-index {
 	display: flex;
