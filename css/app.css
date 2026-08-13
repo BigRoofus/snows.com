@@ -336,8 +336,8 @@ footer {
 }
 
 .centered-logo {
-	width: 33vw;
-	max-width: 420px;
+	width: 8.25vw;
+	max-width: 105px;
 	position: relative;
 	z-index: 1;
 }
