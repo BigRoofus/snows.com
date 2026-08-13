@@ -426,6 +426,16 @@ footer {
 	color: #fff;
 }
 
+.train-page-index {
+	color: #fff;
+}
+
+.train-page-index .note,
+.train-page-index .train-card-icon,
+.train-page-index footer {
+	color: #fff;
+}
+
 /* TRAIN INDEX */
 .train-index {
 	display: flex;
