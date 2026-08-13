@@ -281,42 +281,78 @@ footer {
 }
 
 .nav-dropdown {
-	display: none;
+	display: flex;
+	visibility: hidden;
+	opacity: 0;
+	pointer-events: none;
 	flex-direction: column;
-	position: absolute;
-	top: 1.6rem;
+	position: fixed;
+	top: 0;
 	right: 0;
 	min-width: 200px;
 	background: #ffffff;
 	border: none;
-	padding: 0.5rem 0.6rem;
+	padding: 0.5rem 0.6rem 0.5rem 0.3rem;
 	gap: 0.15rem;
 	box-shadow: none;
 	outline: none;
 }
 
 .nav-dropdown.open {
-	display: flex;
+	visibility: visible;
+	opacity: 1;
+	pointer-events: auto;
 }
 
 .nav-dropdown a {
+	position: relative;
 	display: block;
 	padding: 0.15rem 0.2rem;
 	font-family: 'TT Firs', sans-serif;
-	font-size: 13px;
+	font-size: 35.75px;
 	font-weight: 800;
 	letter-spacing: 0.02em;
-	color: #1a1a1a;
 	text-decoration: none;
 	white-space: nowrap;
 	box-shadow: none;
 	outline: none;
 	transform: scale(1.75);
 	transform-origin: left center;
+	color: transparent;
+	background: linear-gradient(
+		180deg,
+		#0b1026 0%,
+		#0b1026 4%,
+		#182548 8%,
+		#33305f 12%,
+		#6b4c7a 16%,
+		#c97b8a 20%,
+		#f0a96e 24%,
+		#ffdcA0 28%,
+		#bfe3f0 34%,
+		#8fcbe8 40%,
+		#5aa9db 50%,
+		#5aa9db 58%,
+		#8fcbe8 64%,
+		#f7c98a 72%,
+		#f0895a 78%,
+		#c9587a 82%,
+		#6b4c7a 86%,
+		#2d2a5c 90%,
+		#14183a 94%,
+		#0b1026 100%
+	);
+	background-size: 100% 2000%;
+	background-attachment: fixed;
+	animation: skyCycle 90s linear infinite;
+	animation-delay: -15s;
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 .nav-dropdown a:hover {
-	background: rgba(26, 26, 26, 0.1);
+	filter: hue-rotate(65deg) brightness(0.8);
 }
 
 .message {
